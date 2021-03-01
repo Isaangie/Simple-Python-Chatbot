@@ -42,7 +42,7 @@ def predict_class(sentence, model):
     ERROR_THRESHOLD = 0.25
     results = [[i,r] for i,r in enumerate(res) if r>ERROR_THRESHOLD]
     # sort by strength of probability
-    
+   
     
     for r in results:
         return_list.append({"intent": classes[r[0]], "probability": str(r[1])})
